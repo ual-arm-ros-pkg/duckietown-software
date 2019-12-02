@@ -14,6 +14,11 @@
 		<remap from="/line_detector_node/corrected_image/compressed" to="/$(arg veh)/image_transformer_node/corrected_image/compressed"/>
 		<remap from="/line_detector_node/fsm_mode" to="/$(arg veh)/fsm_node/mode"/>
 		<remap from="/line_detector_node/switch" to="/$(arg veh)/line_detector_node/switch"/>
+		<remap from="/line_detector_node/image" to="/$(arg veh)/camera_node/image/compressed"/>
+		<remap from="/line_detector_node/edge" to="/$(arg veh)/line_detector_node/edge"/>
+		<remap from="/line_detector_node/image_with_lines" to="/$(arg veh)/line_detector_node/image_with_lines"/>
+		<remap from="/line_detector_node/segment_list" to="/$(arg veh)/line_detector_node/segment_list"/>
+		<remap from="/line_detector_node/transform" to="/$(arg veh)/line_detector_node/transform"/>
 
 
     <node name="line_detector_node" pkg="line_detector" type="line_detector_node.py" output="screen" clear_params="true" required="true">
